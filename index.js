@@ -87,7 +87,7 @@ const questions = [
                     
    
             let markdown =` 
-  ![GitHub last commit](https://img.shields.io/github/last-commit/${username}/${title}) 
+  
   ![GitHub followers](https://img.shields.io/github/followers/${username}) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/${username}/${title}) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/${username}/${title})
