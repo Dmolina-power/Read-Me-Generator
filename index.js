@@ -17,6 +17,16 @@ inquirer
       message: "What is your Github username?",
     },
     {
+        name: "email",
+        type: "input",
+        message: "What is your Email address?",
+      },
+      {
+        name: "social",
+        type: "input",
+        message: "What is your linkedIn address?",
+      },
+    {
       name: "title",
       type: "input",
       message: "Name of the project Title",
@@ -27,7 +37,7 @@ inquirer
       message: "describe your project:",
     },
     {
-      name: "Installation",
+      name: "installation",
       type: "input",
       message: "steps in installing your project are?",
     },
