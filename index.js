@@ -1,7 +1,8 @@
 const fs = require("fs");
 const util = require("util");
-
+const axios = require("axios")
 const inquirer = require("inquirer");
+const markdown = require("./utils/generateMarkdown");
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -18,7 +19,7 @@ inquirer
     {
       name: "title",
       type: "input",
-      message: "project title name is ?",
+      message: "Name of the project Title",
     },
     {
       name: "description",
@@ -47,13 +48,13 @@ inquirer
       message: "mention any collaborators in your project",
     },
   ])
-  .then(function (user) {
-    console.log(user);
-    fs.writeFile("README.md", oneGiganticReadMeStr, function (err) {
-      if (err) throw err;
-      console.log("success!");
+    .then(function (reponse) {
+        fs.writeFile("README.md",markdown(response,profile, name), function (err) {
+        if (err) throw err;
+        console.log("success!");
     });
   });
+    
 
 
 
