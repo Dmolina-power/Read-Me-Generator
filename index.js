@@ -62,7 +62,7 @@ inquirer
     },
   
    ]) .then(function (response) {
-        fs.writeFile("README.md",markdown(response), function (err) {
+        fs.writeFile("GenerateREADME.md",markdown(response), function (err) {
         if (err) throw err;
         console.log("success!");
    

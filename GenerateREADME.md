@@ -2,8 +2,8 @@
   ![GitHub last commit](https://img.shields.io/github/last-commit/dmolina-power/Portfolio) 
   ![GitHub followers](https://img.shields.io/github/followers/dmolina-power) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio) 
-  ![GitHub](https://img.shields.io/github/license/dmolina-power/MIT)
   ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio)
+  
   
 # Portfolio
 

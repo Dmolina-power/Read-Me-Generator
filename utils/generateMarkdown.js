@@ -3,8 +3,8 @@ function generateMarkdown(data) {
   ![GitHub last commit](https://img.shields.io/github/last-commit/${data.username}/${data.title}) 
   ![GitHub followers](https://img.shields.io/github/followers/${data.username}) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.title}) 
-  ![GitHub](https://img.shields.io/github/license/${data.username}/${data.license})
   ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.title})
+  
   
 # ${data.title}
 
