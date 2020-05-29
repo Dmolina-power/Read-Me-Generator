@@ -1,5 +1,5 @@
-
-  ![GitHub last commit](https://img.shields.io/github/last-commit/dmolina-power/Portfolio) 
+ 
+            ![GitHub last commit](https://img.shields.io/github/last-commit/dmolina-power/Portfolio) 
   ![GitHub followers](https://img.shields.io/github/followers/dmolina-power) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio)
@@ -12,33 +12,33 @@
  * [Installation](#installation)
  * [Usage](#usage)
  * [Project Link](#projectLink)
- * [Contact](#email,#social) 
+ * [Contact](#email) 
  * [Contributing](#contributing)
  * [License](#license)
  
  ## Description
- a portfolio page about me for my future employers to see
+ no
 
  ## Installation
- none
+ no
 
  ## Usage
- go through the tabs and view content
+ no
 
- ## Project Link
- https://dmolina-power.github.io/Portfolio/
+ ## ProjectLink
+ https://dmolina-power.github.io/portfolio/
 
- ## Contact
- bigdpower@icloud.com
+ ## Email
+ bigdpower@gmail.com
 
  
 
  ## Contributing
- none
+ no
 
  ## License
  MIT
 
 
-
-
+ ![Avatar Image](https://avatars0.githubusercontent.com/u/62960620?v=4)
+ 

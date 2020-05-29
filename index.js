@@ -9,23 +9,22 @@ const writeFile = util.promisify(fs.writeFile);
 
 
 // generate Questions //
-inquirer
-.prompt([ 
-    
-       
-    {
-      name: "username",
-      type: "input",
-      message: "What is your Github username?",
-    },
-    {
-        name: "email",
-        type: "input",
-        message: "What is your Email address?",
-      },
-      
-    {
-      name: "title",
+const questions = [
+
+
+{
+    name: "username",
+    type: "input",
+    message: "What is your Github username?",
+},
+{
+    name: "email",
+    type: "input",
+    message: "What is your Email address?",
+},
+
+{
+    name: "title",
       type: "input",
       message: "Name of the project Title",
     },
@@ -60,12 +59,78 @@ inquirer
       type: "input",
       message: "mention any collaborators in your project",
     },
-  
-   ]) .then(function (response) {
-        fs.writeFile("GenerateREADME.md",markdown(response), function (err) {
-        if (err) throw err;
-        console.log("success!");
-   
-    });
-        });
+]
+    function init() {
+        questionAsk();
+    }
     
+    init();
+  
+    function writeToFile(fileName, data) {
+        fs.writeFile(fileName, data, function(err) {
+            
+            if (err) {
+                return console.log(err);
+            }
+            console.log("success!");
+          });
+    }
+        
+   
+        function questionAsk(){
+
+            inquirer.prompt(questions).then((answers) => {
+                const {username, title, description, installation, usage, projectLink, email, contributing , license} = answers;
+                let queryURL = `https://api.github.com/users/${username}?per_page=100`
+                axios.get(queryURL).then(function(response){
+                    let imageURL = response.data.avatar_url;
+                    
+   
+            let markdown =` 
+            ![GitHub last commit](https://img.shields.io/github/last-commit/${username}/${title}) 
+  ![GitHub followers](https://img.shields.io/github/followers/${username}) 
+  ![GitHub repo size](https://img.shields.io/github/repo-size/${username}/${title}) 
+  ![GitHub repo size](https://img.shields.io/github/repo-size/${username}/${title})
+  
+  
+# ${title}
+
+## Table of Contents:
+ * [Description](#description)
+ * [Installation](#installation)
+ * [Usage](#usage)
+ * [Project Link](#projectLink)
+ * [Contact](#email) 
+ * [Contributing](#contributing)
+ * [License](#license)
+ 
+ ## Description
+ ${description}
+
+ ## Installation
+ ${installation}
+
+ ## Usage
+ ${usage}
+
+ ## ProjectLink
+ ${projectLink}
+
+ ## Email
+ ${email}
+
+ 
+
+ ## Contributing
+ ${contributing}
+
+ ## License
+ ${license}
+
+
+ ![Avatar Image](${imageURL})
+ `;
+ writeToFile("./GenerateREADME.md", markdown);
+});
+})
+}
