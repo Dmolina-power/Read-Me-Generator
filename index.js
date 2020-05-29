@@ -10,7 +10,9 @@ const writeFile = util.promisify(fs.writeFile);
 
 // generate Questions //
 inquirer
-  .prompt([
+.prompt([ 
+    
+       
     {
       name: "username",
       type: "input",
@@ -21,11 +23,7 @@ inquirer
         type: "input",
         message: "What is your Email address?",
       },
-      {
-        name: "social",
-        type: "input",
-        message: "What is your linkedIn address?",
-      },
+      
     {
       name: "title",
       type: "input",
@@ -62,39 +60,12 @@ inquirer
       type: "input",
       message: "mention any collaborators in your project",
     },
-  ])
-    .then(function (response) {
-        let queryURL = `https://api.github.com/users/${githubname}?per_page=100`
+  
+   ]) .then(function (response) {
         fs.writeFile("README.md",markdown(response), function (err) {
         if (err) throw err;
         console.log("success!");
+   
     });
-  });
+        });
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

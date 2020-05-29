@@ -32,7 +32,7 @@ function generateMarkdown(data) {
  ## Contact
  ${data.email}
 
- ${data.social}
+ 
 
  ## Contributing
  ${data.contributing}
@@ -41,7 +41,7 @@ function generateMarkdown(data) {
  ${data.license}
 
 
- ![Avatar Image](${imageURL})
+
 
 `;
 }
