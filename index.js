@@ -32,6 +32,11 @@ inquirer
       message: "Name of the project Title",
     },
     {
+        name: "projectLink",
+        type: "input",
+        message: "whats your project link URL?",
+      },
+    {
       name: "description",
       type: "input",
       message: "describe your project:",
@@ -53,7 +58,7 @@ inquirer
       choices: ["MIT", "IBM"],
     },
     {
-      name: "contribute",
+      name: "contributing",
       type: "input",
       message: "mention any collaborators in your project",
     },
