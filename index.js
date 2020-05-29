@@ -45,6 +45,11 @@ const questions = [
     message: "how to use the repo:",
   },
   {
+    name: "test",
+    type: "input",
+    message: "What command should run to run tests?",
+  },
+  {
     name: "license",
     type: "list",
     message: "which license do you use?",
@@ -78,6 +83,7 @@ function questionAsk() {
       title,
       description,
       installation,
+      test,
       usage,
       projectLink,
       email,
@@ -101,6 +107,7 @@ function questionAsk() {
  * [Description](#description)
  * [Installation](#installation)
  * [Usage](#usage)
+ * [test](#test)
  * [Project Link](#projectLink)
  * [Contact](#email) 
  * [Contributing](#contributing)
@@ -114,6 +121,9 @@ function questionAsk() {
 
  ## Usage
  ${usage}
+
+ ## test
+ ${test}
 
  ## ProjectLink
  ${projectLink}

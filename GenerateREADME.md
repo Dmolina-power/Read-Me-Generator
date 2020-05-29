@@ -1,8 +1,8 @@
  
-            
+  
   ![GitHub followers](https://img.shields.io/github/followers/dmolina-power) 
   ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio) 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio)
+  
   
   
 # Portfolio
@@ -11,30 +11,34 @@
  * [Description](#description)
  * [Installation](#installation)
  * [Usage](#usage)
+ * [test](#test)
  * [Project Link](#projectLink)
  * [Contact](#email) 
  * [Contributing](#contributing)
  * [License](#license)
  
  ## Description
- no
+ Its a profile app with an About me, Portfolio, and Contact page for future employers to check out
 
  ## Installation
- no
+ none
 
  ## Usage
- no
+ surf the site and view my information!
+
+ ## test
+ none
 
  ## ProjectLink
  https://dmolina-power.github.io/portfolio/
 
  ## Email
- bigdpower@gmail.com
+ bigdpower@icloud.com
 
  
 
  ## Contributing
- no
+ none
 
  ## License
  MIT
