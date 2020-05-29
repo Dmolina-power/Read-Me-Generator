@@ -48,8 +48,8 @@ inquirer
       message: "mention any collaborators in your project",
     },
   ])
-    .then(function (reponse) {
-        fs.writeFile("README.md",markdown(response,profile, name), function (err) {
+    .then(function (response) {
+        fs.writeFile("README.md",markdown(response), function (err) {
         if (err) throw err;
         console.log("success!");
     });
