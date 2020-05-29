@@ -6,42 +6,78 @@ const inquirer = require("inquirer");
 const writeFile = util.promisify(fs.writeFile);
 
 
+
+// generate Questions //
 inquirer
   .prompt([
-      {
-        name:"username",
-        type: "input",
-        message: "What is your Github username?",
-      },
-      {
-        name:"title",
-        type:"input",
-        message:"project title name is ?",
-      },
-      {
-        name:"description",
-        type:"input",
-        message:"describe your project:",
-      },
-      {
-        name:"Installation",
-        type:"input",
-        message:"steps in installing your project are?",
-      },
-      {
-        name:"usage",
-        type:"input",
-        message:"how to use the repo:",
-      },
-      {
-        name:"license",
-        type:"list",
-        message:"which license do you use?",
-        choices:["MIT", "IBM"]
-      },
-      {
-        name:"contribute",
-        type:"input",
-        message:"mention any collaborators in your project",
-      },
-  )];
+    {
+      name: "username",
+      type: "input",
+      message: "What is your Github username?",
+    },
+    {
+      name: "title",
+      type: "input",
+      message: "project title name is ?",
+    },
+    {
+      name: "description",
+      type: "input",
+      message: "describe your project:",
+    },
+    {
+      name: "Installation",
+      type: "input",
+      message: "steps in installing your project are?",
+    },
+    {
+      name: "usage",
+      type: "input",
+      message: "how to use the repo:",
+    },
+    {
+      name: "license",
+      type: "list",
+      message: "which license do you use?",
+      choices: ["MIT", "IBM"],
+    },
+    {
+      name: "contribute",
+      type: "input",
+      message: "mention any collaborators in your project",
+    },
+  ])
+  .then(function (user) {
+    console.log(user);
+    fs.writeFile("README.md", oneGiganticReadMeStr, function (err) {
+      if (err) throw err;
+      console.log("success!");
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
