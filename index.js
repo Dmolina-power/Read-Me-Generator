@@ -64,6 +64,7 @@ inquirer
     },
   ])
     .then(function (response) {
+        let queryURL = `https://api.github.com/users/${githubname}?per_page=100`
         fs.writeFile("README.md",markdown(response), function (err) {
         if (err) throw err;
         console.log("success!");
