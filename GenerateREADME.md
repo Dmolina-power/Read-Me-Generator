@@ -1,11 +1,11 @@
  
   
   ![GitHub followers](https://img.shields.io/github/followers/dmolina-power) 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/Portfolio) 
+  ![GitHub repo size](https://img.shields.io/github/repo-size/dmolina-power/5-Day-Weather-forecaster-HW) 
   
   
   
-# Portfolio
+# 5-Day-Weather-forecaster-HW
 
 ## Table of Contents:
  * [Description](#description)
@@ -18,19 +18,19 @@
  * [License](#license)
  
  ## Description
- Its a profile app with an About me, Portfolio, and Contact page for future employers to check out
+ check your weather
 
  ## Installation
  none
 
  ## Usage
- surf the site and view my information!
+ search your city 
 
  ## test
  none
 
  ## ProjectLink
- https://dmolina-power.github.io/portfolio/
+ https://dmolina-power.github.io/5-Day-Weather-forecaster-HW/
 
  ## Email
  bigdpower@icloud.com
